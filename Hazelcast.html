@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Karan Chopra</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+<!-- Favicons -->
+<link href="assets/img/icon.png" rel="icon">
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i> 
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/kc1.jpg" alt="" class="img-fluid rounded-square">
+        <h1 class="text-light"><a href="index.html">Karan Chopra</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://github.com/karanchopra1996" class="github"><i class="bx bxl-github"></i></a>
+          <a href="https://www.linkedin.com/in/karan-chopra-34680511a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experience</span></a></li>
+          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+          <li><a href="index.html#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Extra-Curricular</span></a></li>
+          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+
+  <main id="main">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container" >
+
+        <div class="row gy-4">
+          <div>
+              <!-- <button type="button">Projects</button> -->
+              <a href="index.html#portfolio" class="cross-button" style="font-size: 40px; position: fixed; top: 5px; right: 70px;">&#10006;</a>
+            </div>
+          <div class="col-lg-8">
+            
+            <div class="portfolio-details-slider swiper">
+              
+              <div class="swiper-wrapper align-items-center">
+  
+                <div class="swiper-slide">
+                  <img src="assets/img/Hazelcast4.png" alt="">
+                </div>
+  
+                <div class="swiper-slide">
+                  <img src="assets/img/Hazelcast2.jpg.png" alt="">
+                </div>
+  
+                <div class="swiper-slide">
+                  <img src="assets/img/Hazelcast3.png" alt="">
+                </div>
+  
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div> 
+          <div class="col-lg-12">
+            <div class="portfolio-info">
+              <br>
+              <h3>Hazelcast-based inverted indexing.</h3>
+              <ul>
+                <li><strong>Category</strong>: Backend</li>
+                <li><strong>Client</strong>: Academic</li>
+                <li><strong>Project URL</strong>: <a href="https://github.com/karanchopra1996/Local-vs-Remote-Execution-of-Hazelcast-based-Inverted-Indexing">Hazelcast-based inverted indexing</a></li>
+              </ul>
+            </div>
+
+
+          </div>
+            <div class="portfolio-description">
+              <h2>Summary</h2>
+              <ul>
+                <li><p align="justify"> The project is built using <b>Hazelcast, Java and JSCH</b></p> </li>
+                <li><p align="justify">This assignment involves two versions of an inverted indexing program using Hazelcast's distributed map. The first version, counts word occurrences in each file, displaying file names and counts. The second version uses remote execution to count word occurrences in local files on each cluster node, aiming to explore Hazelcast's remote execution mechanism and measure performance.</p> </li>
+                <li><p align="justify">This project implements two versions of inverted indexing program using Hazelcast’s distributed map that maintains a database of <key, value> items, each with key = a file name and value = its text data. One version is InvertedIndexingLocal.java that retrieves each file from the database, counts the occurrences of a given word, and prints out the file name and the number of occurrences. The other version is InvertedIndexingRemote.java that dispatches InvertedIndexingEach.class to each remote cluster node where it counts the occurrences of a given word in only files local to that remote node. The purpose of this assignment is to understand Hazelcast’s mechanism of remote execution and to measure its execution performance.</p></li>
+                <li><p align="justify"><b>Limitations:</b> Topology Hardcoding: Current implementation hardcodes the cluster topology based on IP addresses, limiting flexibility and scalability. Single-Point-of-Failure: Reliance on a single Hazelcast instance as the central coordination point poses a risk of system failure if it becomes unavailable.</p></li>
+
+
+
+                  .</p></li>
+              </ul>
+            </div>
+          </div>
+          
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
